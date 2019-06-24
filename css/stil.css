@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.container {
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto; }
+
+header {
+  width: 100%;
+  min-height: 7em;
+  padding: 0 20px 10px;
+  background: #d80e0e;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  header h1 {
+    font-family: "Lobster", cursive;
+    font-size: 70px;
+    color: #000; }
+  header nav .item {
+    display: inline-block;
+    height: 100%;
+    padding: 0 5px;
+    margin: 0 5px;
+    background: #000;
+    border-radius: 0 0 20px 20px; }
+    header nav .item img {
+      width: 1.875em;
+      margin-top: 4.1em; }
+
+.content {
+  width: 100%;
+  min-height: 30em;
+  margin-top: 1.875em;
+  padding: 1.875em;
+  background: #000;
+  border-radius: 10px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: justify;
+  display: flex;
+  flex-flow: row wrap; }
+  .content img {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 10px; }
+  .content .topRight {
+    width: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 10px; }
+    .content .topRight h2 {
+      width: 140px;
+      padding: 0 10px;
+      margin-bottom: 10px;
+      background: #fff;
+      color: #000;
+      font-family: "Lobster", cursive;
+      font-size: 30px;
+      align-self: flex-end; }
+  .content .column {
+    width: 33%;
+    padding: 0 10px;
+    border-right: 1px solid #fff; }
+    .content .column.column:last-child {
+      border: none; }
+    .content .column h3 {
+      font-size: 18px;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-family: "Lobster", cursive;
+      background: #d80e0e; }
+    .content .column p {
+      line-height: 1.2em; }
+    .content .column a.readMore {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 0 10px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold; }
+
+footer {
+  width: 100%;
+  float: left;
+  margin-top: 1.875em;
+  padding: 10px 10px 5px;
+  border-radius: 10px;
+  background: #fff; }
+
+@media only screen and (max-width: 820px) {
+  .container {
+    max-width: 85%; }
+    .container header {
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; }
+      .container header h1 {
+        padding-bottom: 5px; }
+      .container header nav .item {
+        border-radius: 20px 20px 20px 20px; }
+    .container .content {
+      justify-content: center; }
+      .container .content .topRight {
+        width: 100%;
+        background: url(../images/music.jpg) no-repeat center center;
+        background-size: cover; }
+        .container .content .topRight h2 {
+          align-self: center;
+          width: 100%;
+          text-align: center; }
+      .container .content img {
+        display: none; } }
+@media only screen and (max-width: 650px) {
+  .container {
+    max-width: 95%; }
+    .container header {
+      padding: 0 10px 10px; }
+    .container .content .column {
+      width: 100%;
+      border-right: none;
+      padding: 10px 0; } }
+
+/*# sourceMappingURL=stil.css.map */
